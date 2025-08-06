@@ -1,0 +1,384 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+
+    background: #2A373F;
+    width: 100%;
+
+}
+
+.head{
+
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #2A373F;
+  box-shadow: 1px 3px 13px;
+  z-index: 1000;
+
+}
+
+
+.head img {
+
+    height: 60px;
+}
+
+.navButtons a{
+
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 12px;
+  font-size: 100%;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.5s;
+    
+
+} 
+
+#contato1{
+
+  border: 1px solid white;
+  padding: 10px 20px;
+
+}
+
+.head a:hover{
+    
+  border: 0;
+  transform: scale(1.2);
+
+}
+
+
+.imgTelaInicial{
+
+  width: 100%;
+  filter: blur(5px);
+
+}
+
+@media screen and (max-width:200px) {
+  
+  .imgTelaInicial {
+
+    width: 50%;
+    
+  }
+
+}
+
+.logoTelaInicial{
+
+  max-width: 60%;
+  position: absolute;
+  top: 30%;     
+  left: 50%;     
+  transform: translate(-50%, -30%);
+
+}
+
+.buttonWhatsFixo{
+
+  border: 1px solid rgb(87, 87, 87);
+  padding: 10px 20px;
+  filter: blur(0.7px);
+  box-shadow: 1px 3px 13px;
+  display: flex;
+  position: fixed;
+  justify-content: end;
+  align-items: left;
+  background-color: rgb(87, 87, 87);
+  z-index: 1000;
+
+}
+
+.buttonWhatsFixo:hover{
+
+  border: 1px solid green;
+  background-color: green;
+
+}
+
+.buttonWhatsFixo a{
+  
+  text-decoration: none;
+  color: white;
+
+}
+
+.objetivos{
+
+  display: flex;
+  background-color: #fff;
+
+}
+
+.objetivos img{
+
+  margin-bottom: 3%;
+  text-align: center;
+  width: 30%;
+
+}
+
+@media screen and (max-width:900px) {
+  
+  .objetivos {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+}
+
+.boxObjetivos{
+
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 6%;
+  margin-bottom: 10%;
+  text-align: center;
+  width: 30%;
+
+}
+
+.p1{
+
+  margin: 5%;
+
+}
+
+.boxAberturaEmpresas {
+
+  background-color: darkgray;
+  margin: 10%;
+  border-radius: 50px;
+  
+
+}
+
+.boxAberturaEmpresas p{
+
+  font-size: 30px;
+  display: flex;
+  color: #fff;
+  margin-left: 5%;
+  align-items: center;
+  text-align: justify;
+
+}
+
+.boxAberturaEmpresas img{
+
+  display: flex;
+  margin-left: 5%;
+  width: 20%;
+
+}
+
+/* .containerEspecialidade{
+
+  display: flex;
+
+} */
+
+
+.boxEspecialidades{
+
+  position: relative;
+  display: inline-block;
+  width: 24%;
+  height: 20%;
+  margin: 0.5%;
+  transition: transform 0.9s;
+
+}
+
+#imgEspecialidades{
+
+  width: 100%;
+  display: block;
+
+}
+
+.textoHouver{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  opacity: 0; 
+  transition: opacity 1.2s ease;
+  font-size: 40px;
+  text-align: start;
+  padding: 10px;
+
+}
+
+.boxEspecialidades:hover .textoHouver{
+
+  opacity: 1;
+  
+
+}
+
+.boxEspecialidades:hover {
+
+  transform: scale(1.03);
+
+}
+
+.contato h1{
+
+  margin: 5%;
+  top: 7%;
+  left: 50%;
+  text-align: center;
+  color: #fff;
+
+}
+
+.icones-contato{
+
+  align-items: center;
+  width: 27%;
+  margin: 3%;
+  transition: transform 0.5s;
+
+}
+
+
+.icones-contato:hover{
+
+  transform: scale(1.05);
+
+}
+
+@media screen and (max-width:900px) {
+  
+  .icones-contato{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+}
+
+.imgFundoSobreNos{
+
+  display: flex;
+  width: 100%;
+  height: 750px;
+
+} 
+
+.sobreNos {
+
+  background-image: url('./img/fundoSobreNos.png');
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.sobreNos h1{
+
+  position: absolute;
+  top: 215%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+
+}
+
+.sobreNos p{
+
+  position: absolute;
+  font-size: large;
+  margin-top: 25%;
+  margin-left: 5%;
+  margin-right: 45%;
+  color: #fff;
+  text-align: justify;
+
+}
+
+.imgContador{
+  
+  position: absolute;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  margin-left: 15%;
+  margin-right: 10%;
+
+}
+
+.rodape {
+
+  background-color: rgb(184, 184, 184);
+
+}
+
+.containerRodape{
+
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: small;
+
+}
+
+.boxRodape a{
+
+  color: black;
+  text-decoration: none;
+
+}
+
+
+#enderecoRodape{
+
+  margin-left: 1.5%;
+  
+
+}
+
+#informacoesRodape{
+
+  text-align: center;
+  margin-right: 7%
+
+}
+
+#contatoRodape{
+
+  text-align: center;
+
+}
+
+#copyright{
+
+  margin-top: 3%;
+  text-align: center;
+
+}
