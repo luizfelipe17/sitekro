@@ -8,7 +8,7 @@ import telefone from "./img/TELEFONE.png"
 import email from "./img/EMAIL.png"
 import missao from "./img/missao.png"
 import servico from "./img/servico.png"
-import teste from "./img/visao.png"
+import visao from "./img/visao.png"
 import aberturaEmpresas from "./img/AberturaDeEmpresa.png"
 import baixoImposto from "./img/BaixoImposto.jpg"
 import estruturaContabil from "./img/EstruturaContabil.jpg"
@@ -57,7 +57,7 @@ function App() {
             <p>Oferecer serviços contábeis com excelência e ética, sempre focando em soluções eficazes para as necessidades de cada cliente.</p>
           </div>
           <div className = 'boxObjetivos'>
-            <img src={teste}/>
+            <img src={visao}/>
             <h1>Visão</h1><br></br>
             <p>Nosso propósito é ser uma contabilidade que vai além dos números, que compreende de forma humana, atenta e empática as necessidades reais de cada cliente, oferecendo soluções práticas e personalizadas.</p>
           </div>
