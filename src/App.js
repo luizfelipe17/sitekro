@@ -1,6 +1,6 @@
 import './style.css'
 import logo from "./img/logoSiteKRO.png"
-import imgTelaInicial from "./img/fundoTelaInicial.png"
+import imgTelaInicial from "./img/fundoTelaInicial.jpg"
 import contador from "./img/CONTADOR.png"
 import fundoSobreNos from "./img/fundoSobreNos.png"
 import whats from "./img/WHATS.png"
@@ -8,13 +8,15 @@ import telefone from "./img/TELEFONE.png"
 import email from "./img/EMAIL.png"
 import missao from "./img/missao.png"
 import servico from "./img/servico.png"
-import teste from "./img/teste.png"
+import teste from "./img/visao.png"
 import aberturaEmpresas from "./img/AberturaDeEmpresa.png"
 import baixoImposto from "./img/BaixoImposto.jpg"
 import estruturaContabil from "./img/EstruturaContabil.jpg"
 import parceriaEmpresarial from "./img/ParceriaEmpresarial.jpg"
 import especialidadesFinanceiro from "./img/EspecialidadesFinanceiro.jpg"
-import simplesLucro from "./img/SimplesNacionalLucroPresumido.jpg"
+import inss from "./img/inss.png"
+import mei from "./img/mei.png"
+import simplesLucro from "./img/lucroPresumido.png"
 import { FiPhone } from "react-icons/fi";
 import { FiMail } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
@@ -69,9 +71,8 @@ function App() {
         </div> 
 
         <div className='servicos'>
-
-<hr></hr>
-            <div id="Simples/Lucro">Serviços e Soluções - Simples Nacional / Lucro Presumido<br></br><br></br>
+            <div id="simplesLucro">
+              {/* <h1>Serviços e Soluções - Simples Nacional / Lucro Presumido<br></br><br></br></h1> */}
    
               •	Abertura de empresa<br></br>
               •	Baixa de empresa<br></br>
@@ -84,8 +85,9 @@ function App() {
               •	Processos Digitais: Administrativo tributário Federal ou Municipal.<br></br>
               <img src={simplesLucro}/>
             </div>
-<hr></hr>
-            <div id>Serviços e Soluções – MEI / Pessoa Física <br></br><br></br>
+            <div id="servicoSolucoes">
+              <img src={mei}/>
+              Serviços e Soluções – MEI / Pessoa Física <br></br><br></br>
 
                 •	DIRPF<br></br>
                 •	GCAP<br></br>
@@ -100,8 +102,7 @@ function App() {
                 •	Pedido de Restituição<br></br>
 
             </div>
-<hr></hr>
-            <p3>  Serviços e Soluções - PREVIDENCIÁRIO – INSS<br></br><br></br>
+            <div id="servicoPrevidenciario">  Serviços e Soluções - PREVIDENCIÁRIO – INSS<br></br><br></br>
 
                   •	Aposentadoria<br></br>
                   •	Auxilio Doença<br></br>
@@ -111,9 +112,10 @@ function App() {
                   •	Análise e acerto de CNIS<br></br>
                   •	Planejamento Previdenciário<br></br>
                   •	Revisão/ recurso Administrativo. <br></br>       
-                  (TODOS ESSES SERVICOS PREVIDENCIARIO SERÁ PRESTADO SOMENTE NO ENDEREÇO DE CONTAGEM) 
+                  (TODOS ESSES SERVICOS PREVIDENCIARIO SERÁ PRESTADO SOMENTE NO ENDEREÇO DE CONTAGEM)
+                  <img src={inss}/>
 
-            </p3>
+            </div>
 
 
         </div>

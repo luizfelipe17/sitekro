@@ -2,13 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.container {
-
-    background: #2A373F;
-    width: 100%;
-
-}
-
 .head{
 
   position: fixed;
@@ -124,7 +117,7 @@ html {
 
   margin-bottom: 3%;
   text-align: center;
-  width: 30%;
+  width: 40%;
 
 }
 
@@ -152,9 +145,63 @@ html {
 
 }
 
-.p1{
+.servicos{
 
-  margin: 5%;
+  background-color: #fff;
+
+}
+
+#simplesLucro {
+
+    display: flex;
+    margin: 10%;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+
+}
+
+#simplesLucro img{
+
+  margin-left: 15%;
+  display: flex;
+  width: 30%;
+
+}
+
+#servicoSolucoes {
+
+    display: flex;
+    margin: 10%;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+
+}
+
+#servicoSolucoes img{
+
+  margin-right: 15%;
+  display: flex;
+  width: 30%;
+
+}
+
+#servicoPrevidenciario {
+
+    display: flex;
+    margin: 10%;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+
+}
+
+#servicoPrevidenciario img{
+
+  margin-left: 15%;
+  display: flex;
+  width: 30%;
 
 }
 
@@ -186,12 +233,11 @@ html {
 
 }
 
-/* .containerEspecialidade{
+.containerEspecialidades{
 
-  display: flex;
+  background-color: #2A373F;
 
-} */
-
+}
 
 .boxEspecialidades{
 
@@ -225,9 +271,9 @@ html {
   justify-content: center;
   opacity: 0; 
   transition: opacity 1.2s ease;
-  font-size: 40px;
+  font-size: 250%;
   text-align: start;
-  padding: 10px;
+  padding: 3%;
 
 }
 
