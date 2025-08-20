@@ -2,6 +2,8 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
 .head{
 
   position: fixed;
@@ -53,7 +55,7 @@ html {
 .imgTelaInicial{
 
   width: 100%;
-  filter: blur(5px);
+  filter: blur(1px);
 
 }
 
@@ -136,72 +138,72 @@ html {
 
 .boxObjetivos{
 
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   margin-right: 5%;
   margin-left: 5%;
   margin-top: 6%;
-  margin-bottom: 10%;
   text-align: center;
   width: 30%;
+  padding: 3%;
 
 }
 
 .servicos{
 
-  background-color: #fff;
+  background-color: #acacac;
+  display: grid;
+  grid-template-areas: 
+    'texto1 texto1 imagem1'
+    'texto2 texto2 imagem2'
+    'texto3 texto3 imagem3';
+
+}
+
+.servicos button{
+
+  
 
 }
 
 #simplesLucro {
 
-    display: flex;
-    margin: 10%;
-    justify-content: center;
-    text-align: justify;
-    align-items: center;
+  grid-area: texto2;
+  margin: 10%;
+  justify-content: center;
+  text-align: start;
+  align-items: center;
 
 }
 
-#simplesLucro img{
+#simplesLucroimg{
 
+  grid-area: imagem1;
   margin-left: 15%;
-  display: flex;
-  width: 30%;
+  margin-right: 15%;
+  width: 40%;
+
 
 }
+
 
 #servicoSolucoes {
 
-    display: flex;
-    margin: 10%;
-    justify-content: center;
-    text-align: justify;
-    align-items: center;
-
-}
-
-#servicoSolucoes img{
-
-  margin-right: 15%;
-  display: flex;
-  width: 30%;
+  grid-area: texto3;
+  margin: 10%;
+  justify-content: center;
+  text-align: start;
+  align-items: center;
 
 }
 
 #servicoPrevidenciario {
 
-    display: flex;
-    margin: 10%;
-    justify-content: center;
-    text-align: justify;
-    align-items: center;
-
-}
-
-#servicoPrevidenciario img{
-
-  margin-left: 15%;
-  display: flex;
-  width: 30%;
+  grid-area: texto;
+  margin: 10%;
+  justify-content: center;
+  text-align: start;
+  align-items: center;
 
 }
 
@@ -210,7 +212,6 @@ html {
   background-color: darkgray;
   margin: 10%;
   border-radius: 50px;
-  
 
 }
 

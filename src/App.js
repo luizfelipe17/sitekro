@@ -72,9 +72,8 @@ function App() {
 
         <div className='servicos'>
             <div id="simplesLucro">
-              {/* <h1>Serviços e Soluções - Simples Nacional / Lucro Presumido<br></br><br></br></h1> */}
-   
-              •	Abertura de empresa<br></br>
+              <h1>Serviços e Soluções - Simples Nacional / Lucro Presumido<br></br><br></br></h1>
+              <p>•	Abertura de empresa<br></br>
               •	Baixa de empresa<br></br>
               •	Alterações Contratuais<br></br>
               •	Transformação em Sociedade Limitada<br></br>
@@ -82,9 +81,10 @@ function App() {
               •	Migrar de MEI para Micro Empresa.<br></br>
               •	Emissão de Notas Fiscais Eletrônica e Notas Fiscais de Serviço Eletrônica<br></br>
               •	Compensação Restituição ressarcimento de Créditos Tributários Federal<br></br>
-              •	Processos Digitais: Administrativo tributário Federal ou Municipal.<br></br>
-              <img src={simplesLucro}/>
+              •	Processos Digitais: Administrativo tributário Federal ou Municipal.<br></br></p>
+              <button>Abrir Empresa</button>
             </div>
+            <img id = "simplesLucroimg" src={simplesLucro}/>
             <div id="servicoSolucoes">
               <img src={mei}/>
               Serviços e Soluções – MEI / Pessoa Física <br></br><br></br>
