@@ -4,7 +4,7 @@ html {
 
 
 
-.head{
+.head {
 
   position: fixed;
   display: flex;
@@ -20,10 +20,10 @@ html {
 
 .head img {
 
-    height: 60px;
+  height: 60px;
 }
 
-.navButtons a{
+.navButtons a {
 
   display: inline-block;
   background-color: transparent;
@@ -33,26 +33,26 @@ html {
   color: #fff;
   text-decoration: none;
   transition: transform 0.5s;
-    
 
-} 
 
-#contato1{
+}
+
+#contato1 {
 
   border: 1px solid white;
   padding: 10px 20px;
 
 }
 
-.head a:hover{
-    
+.head a:hover {
+
   border: 0;
   transform: scale(1.2);
 
 }
 
 
-.imgTelaInicial{
+.imgTelaInicial {
 
   width: 100%;
   filter: blur(1px);
@@ -60,62 +60,63 @@ html {
 }
 
 @media screen and (max-width:200px) {
-  
+
   .imgTelaInicial {
 
     width: 50%;
-    
+
   }
 
 }
 
-.logoTelaInicial{
+.logoTelaInicial {
 
   max-width: 60%;
   position: absolute;
-  top: 30%;     
-  left: 50%;     
+  top: 30%;
+  left: 50%;
   transform: translate(-50%, -30%);
 
 }
 
-.buttonWhatsFixo{
+.buttonWhatsFixo {
 
-  border: 1px solid rgb(87, 87, 87);
+  border-radius: 100vh;
+  border: 4px solid #fff;
+  bottom: 20px;
+  right: 20px;
   padding: 10px 20px;
-  filter: blur(0.7px);
-  box-shadow: 1px 3px 13px;
   display: flex;
   position: fixed;
-  justify-content: end;
-  align-items: left;
-  background-color: rgb(87, 87, 87);
   z-index: 1000;
+  transition: 0.3s;
 
 }
 
-.buttonWhatsFixo:hover{
+.buttonWhatsFixo:hover {
 
-  border: 1px solid green;
-  background-color: green;
+  transform: scale(1.1);
 
 }
 
-.buttonWhatsFixo a{
-  
+.buttonWhatsFixo a {
+
+  align-items: center;
+  text-align: center;
+  font-size: 250%;
   text-decoration: none;
-  color: white;
+  color: rgb(0, 255, 0);
 
 }
 
-.objetivos{
+.objetivos {
 
   display: flex;
   background-color: #fff;
 
 }
 
-.objetivos img{
+.objetivos img {
 
   margin-bottom: 3%;
   text-align: center;
@@ -124,64 +125,75 @@ html {
 }
 
 @media screen and (max-width:900px) {
-  
+
   .objetivos {
 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
+
   }
 
 }
 
-.boxObjetivos{
+.boxObjetivos {
 
   background-color: #ffffff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
   margin-right: 5%;
   margin-left: 5%;
   margin-top: 6%;
+  margin-bottom: 6%;
   text-align: center;
   width: 30%;
   padding: 3%;
 
 }
 
-.servicos{
+.servicos {
 
   background-color: #acacac;
   display: grid;
-  grid-template-areas: 
-    'texto1 texto1 imagem1'
-    'texto2 texto2 imagem2'
-    'texto3 texto3 imagem3';
+  place-items: center;
+  gap: 2%;
+  grid-template-areas:
+    'texto1 texto1 imagem1 imagem1'
+    'imagem2 imagem2 texto2 texto2'
+    'texto3 texto3 imagem3 imagem3';
 
 }
 
-.servicos button{
+.servicos p {
 
-  
+  color: rgb(233, 233, 233);
 
 }
 
 #simplesLucro {
 
-  grid-area: texto2;
-  margin: 10%;
-  justify-content: center;
+  grid-area: texto1;
   text-align: start;
   align-items: center;
+  margin: 10%;
 
 }
 
-#simplesLucroimg{
+#simplesLucroimg {
 
   grid-area: imagem1;
-  margin-left: 15%;
-  margin-right: 15%;
-  width: 40%;
+  width: 90%;
+
+}
+
+#buttonAbrirEmpresa {
+
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px 20px;
 
 
 }
@@ -189,58 +201,104 @@ html {
 
 #servicoSolucoes {
 
-  grid-area: texto3;
-  margin: 10%;
+  grid-area: texto2;
   justify-content: center;
   text-align: start;
   align-items: center;
+  margin: 10%;
+
+}
+
+#servicosSolucoesIMG {
+
+  grid-area: imagem2;
+  width: 55%;
 
 }
 
 #servicoPrevidenciario {
 
-  grid-area: texto;
-  margin: 10%;
+  grid-area: texto3;
   justify-content: center;
   text-align: start;
-  align-items: center;
+  margin: 10%;
+
+
+}
+
+#servicoPrevidenciarioImg {
+
+  grid-area: imagem3;
+  width: 90%;
+
+}
+
+.aberturaEmpresas h3{
+
+  margin: 5%;
+  text-align: center;
+  
 
 }
 
 .boxAberturaEmpresas {
 
-  background-color: darkgray;
-  margin: 10%;
-  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 10%;
+  margin-bottom: 10%;
 
 }
 
-.boxAberturaEmpresas p{
+.boxAberturaEmpresas p {
 
   font-size: 30px;
-  display: flex;
-  color: #fff;
+  color: #000000;
   margin-left: 5%;
-  align-items: center;
-  text-align: justify;
+  text-align: center;
 
 }
 
-.boxAberturaEmpresas img{
-
-  display: flex;
-  margin-left: 5%;
-  width: 20%;
-
-}
-
-.containerEspecialidades{
+#boxAberturaEmpresaItens {
 
   background-color: #2A373F;
+  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
+  padding: 5%;
+  width: 200px;
+  height: 200px;
+  align-content: center;
+  text-align: center;
 
 }
 
-.boxEspecialidades{
+.containerEspecialidades {
+
+  background-color: #2A373F;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  align-items: center;
+  padding: 50px;
+
+
+}
+
+
+.containerCards {
+  display: flex;
+  flex-direction: row;
+  padding: 3%;
+}
+
+.tituloEspecialidas {
+
+  flex-direction: c;
+
+}
+
+.boxEspecialidades {
 
   position: relative;
   display: inline-block;
@@ -251,14 +309,14 @@ html {
 
 }
 
-#imgEspecialidades{
+#imgEspecialidades {
 
   width: 100%;
   display: block;
 
 }
 
-.textoHouver{
+.textoHouver {
 
   position: absolute;
   top: 0;
@@ -268,20 +326,20 @@ html {
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
-  opacity: 0; 
+  opacity: 0;
   transition: opacity 1.2s ease;
-  font-size: 250%;
-  text-align: start;
+  font-size: 30px;
+  text-align: center;
   padding: 3%;
 
 }
 
-.boxEspecialidades:hover .textoHouver{
+.boxEspecialidades:hover .textoHouver {
 
-  opacity: 1;
-  
+  opacity: 1.1;
+
 
 }
 
@@ -291,17 +349,17 @@ html {
 
 }
 
-.contato h1{
+.contato h1 {
 
   margin: 5%;
   top: 7%;
   left: 50%;
   text-align: center;
-  color: #fff;
+  color: #000000;
 
 }
 
-.icones-contato{
+.icones-contato {
 
   align-items: center;
   width: 27%;
@@ -311,32 +369,32 @@ html {
 }
 
 
-.icones-contato:hover{
+.icones-contato:hover {
 
   transform: scale(1.05);
 
 }
 
 @media screen and (max-width:900px) {
-  
-  .icones-contato{
+
+  .icones-contato {
 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
+
   }
 
 }
 
-.imgFundoSobreNos{
+.imgFundoSobreNos {
 
   display: flex;
   width: 100%;
   height: 750px;
 
-} 
+}
 
 .sobreNos {
 
@@ -346,7 +404,7 @@ html {
 
 }
 
-.sobreNos h1{
+.sobreNos h1 {
 
   position: absolute;
   top: 215%;
@@ -357,7 +415,7 @@ html {
 
 }
 
-.sobreNos p{
+.sobreNos p {
 
   position: absolute;
   font-size: large;
@@ -369,8 +427,8 @@ html {
 
 }
 
-.imgContador{
-  
+.imgContador {
+
   position: absolute;
   margin-top: 20%;
   margin-bottom: 10%;
@@ -385,17 +443,40 @@ html {
 
 }
 
-.containerRodape{
+.containerRodape {
 
   height: auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   font-size: small;
+  gap: 2%;
 
 }
 
-.boxRodape a{
+@media screen and (max-width:600px) {
+
+  .containerRodape {
+
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    flex-direction: column;
+
+  }
+
+  #contatoRodape {
+
+    text-align: center;
+    margin-top: 3%;
+
+  }
+
+
+}
+
+.boxRodape a {
 
   color: black;
   text-decoration: none;
@@ -403,28 +484,29 @@ html {
 }
 
 
-#enderecoRodape{
+#enderecoRodape {
 
-  margin-left: 1.5%;
-  
+  text-align: start;
+  margin-left: 2.5%;
 
 }
 
-#informacoesRodape{
+#informacoesRodape {
 
   text-align: center;
-  margin-right: 7%
-
+  margin-right: 5%
 }
 
-#contatoRodape{
+#contatoRodape {
 
   text-align: center;
 
 }
 
-#copyright{
+#copyright {
 
+  padding: 0.5%;
+  font-size: smaller;
   margin-top: 3%;
   text-align: center;
 
